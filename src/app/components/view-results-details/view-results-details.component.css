@@ -1,0 +1,56 @@
+.header-title {
+	font-size: 24px;
+	margin-left: 20px;
+}
+
+.view-result-table th {
+	color: #ff5353;
+}
+
+.view-result-table th, .view-result-table td {
+	padding: 10px;
+}
+
+.view-result-table td ul li {
+	margin-bottom: 5px;
+}
+
+.right-question {
+	background-color: rgb(84, 218, 84);
+	display: inline-block; 
+}
+
+.wrong-question {
+	background-color: rgb(255, 130, 130);
+	display: inline-block; 
+}
+
+.view-result-table td ul li {
+	padding: 3px;
+}
+
+.result-detail-title {
+    margin: 0;
+	padding: 20px 0px 10px 10px;
+}
+
+.username-result {
+	color: #ff5353;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+.burger-menu-container {
+	position: absolute;
+	top: 14px;
+	left: 20px;
+}
+
+.burger-menu-item {
+	width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+}

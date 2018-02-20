@@ -10,4 +10,8 @@ export class ViewResultsDetailsComponent implements OnInit {
 
     ngOnInit() {
     }
+
+    getResults() {
+      
+    }
 }

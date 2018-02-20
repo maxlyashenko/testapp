@@ -1,0 +1,29 @@
+.not-found-image {
+    position: relative;
+}
+
+.not-found-image img {
+    position: absolute;
+    top: 5vh;
+    left: 18vw;
+    width: 60%;
+}
+
+.not-found-link a {
+    position: absolute;
+    bottom: 10vh;
+    left: 40vw;
+}
+
+.btn {
+	margin-top: 20px;
+	background-color: #ff5353;
+}
+
+.btn:hover {
+	background-color: #ff6868;
+}
+
+.btn:focus {
+	background-color: #ff6868;
+}

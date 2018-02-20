@@ -1,1 +1,45 @@
-<h1>edit-tests</h1>
+<header>
+    <nav>
+        <div class="burger-menu-container" (click)="onVisible()">
+                <div class="burger-menu-item"></div>
+                <div class="burger-menu-item"></div>
+                <div class="burger-menu-item"></div>
+        </div>
+        <div class="nav-tit">Редактирование тестов</div>
+        <language></language>
+    </nav>
+</header>
+<div class="edit-questions-container">
+    <div class="questions-list">
+            <h4 class="qustions-list__title">Список тестів</h4>
+            <ul class="collection">
+                <li class="collection-item" *ngFor="let test of tests" [class.active]="test === selectedTest" (click)="onSelect(test)">{{ test.name }}</li>
+
+            </ul>
+            <button class="waves-effect waves-light btn">Додати</button>
+            <button class="waves-effect waves-light btn">Видалити</button>
+        </div>
+        
+    <div class="question-form">
+        <ul>
+            <li><input type="text" placeholder="Назва теста"></li>
+
+        <!-- <li>   
+            <select class="browser-default">
+                <option value="" disabled selected>Відображення теста</option>
+                <option value="1">Да</option>
+                <option value="2">Нет</option>
+            </select>
+        </li>
+            
+        <li>   
+            <select class="browser-default">
+                <option value="" disabled selected>Доступ</option>
+                <option value="1"></option>
+            </select>
+        </li> -->
+        </ul>
+
+        <button class="waves-effect waves-light btn">Зберегти</button>
+    </div>
+</div>

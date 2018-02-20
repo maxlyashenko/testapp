@@ -1,1 +1,43 @@
-<h1>view-results-details</h1>
+<header> 
+    <nav>
+        <div class="burger-menu-container" (click)="onBurgerToggle()">
+            <div class="burger-menu-item"></div>
+            <div class="burger-menu-item"></div>
+            <div class="burger-menu-item"></div>
+        </div>
+        <div class="nav-tit">Результати теста</div>
+        <language></language>
+    </nav>
+</header>
+<h4 class="result-detail-title">Ім'я користувача: <span class="username-result">Максим</span></h4>
+<table class="striped responsive-table view-result-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Питання</th>
+        <th>Відповідь</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Питання 1</td>
+        <td>
+            <ul>
+                <li class="wrong-question">Варіант 1</li><div></div>
+                <li>Варіант 2</li>
+                <li class="right-question">Варіант 3</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Питання 2</td>
+        <td>
+            <ul>
+                <li>Відповідь 1</li>
+            </ul>
+        </td>
+    </tr>
+    </tbody>
+</table>

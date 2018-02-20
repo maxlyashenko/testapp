@@ -1,0 +1,37 @@
+.sidenav {
+    height: 100%;
+}
+
+.sidenav-container {
+    position: absolute;
+    width: 20vw;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    float: left;
+    z-index: 2;
+    border-right: 1px solid #ccc;
+}
+
+.sidenav-container ul li.active {
+	background-color: #ff6868;
+}
+
+.sidenav-container ul li {
+    padding: 20px 20px;
+}
+
+.sidenav-container ul li:hover {
+    background-color: #ffa0a0;
+    color: #fff;
+}
+
+
+.sidenav-container ul li a {
+    color: #000;
+}
+
+.sidenav-container ul li a.active {
+    color: #ff6868;
+}
+

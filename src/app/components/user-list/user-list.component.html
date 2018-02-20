@@ -1,1 +1,49 @@
-<h1>view-results</h1>
+<header> 
+    <nav>
+        <div class="burger-menu-container" (click)="onBurgerToggle()">
+            <div class="burger-menu-item"></div>
+            <div class="burger-menu-item"></div>
+            <div class="burger-menu-item"></div>
+        </div>
+        <div class="nav-tit">Список користувачів</div>
+    </nav>
+    <language></language>
+</header>
+<table class="striped responsive-table view-result-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Им'я</th>
+        <th>Телефон</th>
+        <th>Чи вивчав раніше</th>
+        <th>Кількість балів</th>
+        <th>Подивитись результати тестів</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Максим</td>
+        <td>0992548765</td>
+        <td>Нет</td>
+        <td>68</td>
+        <td><a routerLink="/view-results-details">Подивитись результати тестів</a></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Михаил</td>
+        <td>0956544785</td>
+        <td>Да</td>
+        <td>89</td>
+        <td><a routerLink="/view-results-details">Подивитись результати тестів</a></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Андрей</td>
+        <td>0992548765</td>
+        <td>Нет</td>
+        <td>95</td>
+        <td><a routerLink="/view-results-details">Подивитись результати тестів</a></td>
+    </tr>
+    </tbody>
+  </table>

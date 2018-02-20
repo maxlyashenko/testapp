@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Question } from '../../question';
 
 @Component({
   selector: 'app-test',
@@ -8,6 +9,21 @@ import { Component, OnInit } from '@angular/core';
 export class TestComponent implements OnInit {
     constructor() { }
 
+    questions: Question[] = [];
+
+
     ngOnInit() {
+    }
+
+    timer() {
+
+    }
+
+    getQuestionById() {
+
+    }
+
+    answerTheQuestion() {
+      
     }
 }

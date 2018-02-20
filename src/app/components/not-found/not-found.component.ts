@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class NotFoundComponent implements OnInit {
     constructor() { }
 
+    image: any = "../../notfound.png";
+
     ngOnInit() {
     }
 }

@@ -1,0 +1,24 @@
+.admin-panel-container {
+    position: absolute;
+    top: 30vh;
+    left: 40vw;
+    width: 20vw;
+    height: 100%;
+}
+
+.admin-panel-container ul li {
+    padding: 20px 20px;
+}
+
+.admin-panel-container ul li:hover {
+    background-color: #ffa0a0;
+    color: #fff;
+}
+
+.admin-panel-container ul li a {
+    color: #000;
+}
+
+.sidenav-container ul li a.active {
+    color: #ff6868;
+}

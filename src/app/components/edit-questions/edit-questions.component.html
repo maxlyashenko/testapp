@@ -1,1 +1,101 @@
-<h1>edit-question</h1>
+<header>
+    <nav>
+        <div class="burger-menu-container" (click)="onVisible()">
+            <div class="burger-menu-item"></div>
+            <div class="burger-menu-item"></div>
+            <div class="burger-menu-item"></div>
+        </div>
+        <div class="nav-tit">Редактирование вопросов</div>
+        <language></language>
+    </nav>
+</header>
+<sidenav *ngIf="isVisible"></sidenav>
+    <div class="edit-questions-container">
+            <div class="questions-list">
+                    <h4 class="qustions-list__title">Список питань</h4>
+                    <ul class="collection">
+                        <li class="collection-item" *ngFor="let question of questions" [class.active]="question === selectedQuestion" (click)="onSelect(question)">{{ question.name }}</li>
+                    </ul>
+                    <button class="waves-effect waves-light btn" (click)="addQuestion(name)">Додати</button>
+                    <button class="waves-effect waves-light btn">Видалити</button>
+                </div>
+                
+            <div class="question-form">
+                <ul>
+                    <li><input type="text" placeholder="Питання" [(ngModel)]="name" class="keyboardInput"></li>
+                    <li>   
+                        <select class="browser-default">
+                            <option value="" disabled selected>Тип питання</option>
+                            <!-- <option value="" *ngFor="let tq of typeOfQuestion" [ngValue]="tq" (click)="onVisible()">
+                                {{ tq.tqName }}
+                            </option> -->
+                            <option value="1">Відповідь записується вручну</option>
+                            <option value="2">З варіантами відповідей</option>
+                        </select>
+                    </li>
+                    <li><input type="text" placeholder="Кількість балів"></li>
+                </ul>
+        
+                <div class="right-answer" *ngIf="isAnswer">
+                    <input type="text" class="keyboardInput" placeholder="Запишіть правильну відповідь">
+                </div>
+        
+                <div class="option-container" *ngIf="isOption">
+                    <div class="option-container-list">
+                        <div class="option-container-title">Варіанти відповідей</div>
+                        <div class="options-of-answers">
+                            <ul>
+                                <li><input type="text" class="keyboardInput" placeholder="Варіант 1"></li>
+                                <li><input type="text" class="keyboardInput" placeholder="Варіант 2"></li>
+                                <li><input type="text" class="keyboardInput" placeholder="Варіант 3"></li>
+                            </ul>
+                        </div>
+                        <button class="waves-effect waves-light btn btn-floating">+</button> 
+                    </div>
+                    <div class="right-options">
+                        Відзначити як правильне
+                        <div class="right-option-check">
+                            <ul>
+                                <li>
+                                    <p>
+                                        <input type="checkbox" class="filled-in" id="var1">
+                                        <label for="var1"></label>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <input type="checkbox" class="filled-in" id="var2">
+                                        <label for="var2"></label>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <input type="checkbox" class="filled-in" id="var3">
+                                        <label for="var3"></label>
+                                    </p>
+                                </li>
+                            </ul> 
+                        </div>
+                    </div>
+                    <ul>
+                        <li><button class="delete-variant">X</button></li>
+                        <li><button class="delete-variant">X</button></li>
+                        <li><button class="delete-variant">X</button></li>
+                    </ul>
+                </div>
+        
+                <form action="#">
+                        <div class="file-field input-field">
+                            <div class="btn">
+                            <span>File</span>
+                            <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                            </div>
+                        </div>
+                        </form>
+                <button class="waves-effect waves-light btn" (click)="updateQuestion()">Зберегти</button>
+            </div>
+        </div>
+

@@ -1,0 +1,51 @@
+
+.registraion-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+}
+
+.registraion-container form {
+	display: flex;
+	flex-direction: column;
+	width: 20vw;
+	align-items: center;
+}
+
+.registraion-container form button {
+	width: 60%;
+}
+
+.registration-item input[type="checkbox"] + label  {
+	margin-top: 15px;
+	width: 20vw;
+} 
+
+.registration-item button {
+	margin-top: 25px;
+}
+
+.btn {
+	margin-top: 20px;
+	background-color: #ff5353;
+}
+
+.btn:hover {
+	background-color: #ff6868;
+}
+
+.btn:focus {
+	background-color: #ff6868;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+	border-bottom: 1px solid #ff6868;
+	-webkit-box-shadow: 0 1px 0 0 #ff6868;
+	box-shadow: 0 1px 0 0 #ff6868;
+}
+
+[type="checkbox"].filled-in:checked + label:after {
+	border: 2px solid #ff6868;
+	background-color: #ff6868;
+}
